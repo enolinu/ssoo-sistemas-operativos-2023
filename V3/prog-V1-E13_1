@@ -1,0 +1,8 @@
+6// Tamanio
+5  //Prioridad
+ADD 3 0
+INC -1
+TRAP 4
+ZJUMP 2 
+JUMP -3  
+TRAP 3

@@ -1,0 +1,6 @@
+30
+10
+NOP
+TRAP 5
+TRAP 4
+TRAP 3

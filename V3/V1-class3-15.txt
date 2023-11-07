@@ -1,0 +1,37 @@
+Simulator after V1-ex15
+arguments: "prog-V1-E5", "NonExistingProg", "prog-V1-E6", "prog-V1-E7"
+
+30 messages loaded from file messagesTCH.txt
+13 messages loaded from file messagesSTD.txt
+0 Asserts Loaded
+User program list:
+        Program [prog-V1-E5] with arrival time [0]
+        Program [NonExistingProg] with arrival time [0]
+        Program [prog-V1-E6] with arrival time [0]
+        Program [prog-V1-E7] with arrival time [0]
+New process [3 - SystemIdleProcess] moving to the [NEW] state
+Process [3] created from program [SystemIdleProcess]
+Process [3 - SystemIdleProcess] moving from the [NEW] state to the [READY] state
+Ready-to-run processes queue:
+        USER: -EMPTY-
+        DAEMONS:[3,100] 
+ERROR:Program prog-V1-E5 is not valid[--- invalid priority or size ---]
+ERROR:Program NonExistingProg is not valid[--- it does not exist ---]
+ERROR:Program prog-V1-E6 is too big
+ERROR:Program prog-V1-E7 is too big
+Process [3 - SystemIdleProcess] moving from the [READY] state to the [EXECUTING] state
+New Tick (1)
+{0D 000 000} IRET 0 0 (PC: 183, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (2)
+{04 003 000} TRAP 3 0 (PC: 184, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (3)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (4)
+Process [3 - SystemIdleProcess] has requested to terminate
+Process [3 - SystemIdleProcess] moving from the [EXECUTING] state to the [EXIT] state
+The system will shut down now...
+New Tick (5)
+{0D 000 000} IRET 0 0 (PC: 241, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (6)
+{0B 000 000} HALT 0 0 (PC: 241, Accumulator: 0, PSW: 0083 [--------X-----ZS])
+END of the simulation

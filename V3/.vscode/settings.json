@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "processorProp.C": "cpp",
+        "*.def": "c",
+        "simulator.h": "c",
+        "heap.h": "c"
+    }
+}

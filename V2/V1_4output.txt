@@ -1,0 +1,96 @@
+Simulator after V2-ex4
+Arguments: "prog-V1-E3", "prog-V1-E3", "prog-V1-E3", "prog-V1-E3"
+
+30 messages loaded from file messagesTCH.txt
+7 messages loaded from file messagesSTD.txt
+0 Asserts Loaded
+User program list:
+        Program [prog-V1-E3] with arrival time [0]
+        Program [prog-V1-E3] with arrival time [0]
+        Program [prog-V1-E3] with arrival time [0]
+        Program [prog-V1-E3] with arrival time [0]
+Process [0] created from program [SystemIdleProcess]
+Process [1] created from program [prog-V1-E3]
+Process [2] created from program [prog-V1-E3]
+Process [3] created from program [prog-V1-E3]
+ERROR:There are not free entries in the process table for the program prog-V1-E3
+New Tick (1)
+{0D 000 000} IRET 0 0 (PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (2)
+{05 000 000} NOP 0 0 (PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (3)
+{04 005 000} TRAP 5 0 (PC: 2, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (4)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (5)
+Process [1 - prog-V1-E3] has the processor assigned.    Processor general registers A: 5         B: 0
+New Tick (6)
+{0D 000 000} IRET 0 0 (PC: 2, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (7)
+{01 00A 80D} ADD 10 -13 (PC: 3, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (8)
+{08 00F 000} WRITE 15 0 (PC: 4, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (9)
+{04 003 000} TRAP 3 0 (PC: 5, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (10)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: -3, PSW: 0084 [--------X----N--])
+New Tick (11)
+Process [1 - prog-V1-E3] has requested to terminate
+New Tick (12)
+{0D 000 000} IRET 0 0 (PC: 0, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (13)
+{05 000 000} NOP 0 0 (PC: 1, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (14)
+{04 005 000} TRAP 5 0 (PC: 2, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (15)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: -3, PSW: 0084 [--------X----N--])
+New Tick (16)
+Process [2 - prog-V1-E3] has the processor assigned.    Processor general registers A: 5         B: 0
+New Tick (17)
+{0D 000 000} IRET 0 0 (PC: 2, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (18)
+{01 00A 80D} ADD 10 -13 (PC: 3, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (19)
+{08 00F 000} WRITE 15 0 (PC: 4, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (20)
+{04 003 000} TRAP 3 0 (PC: 5, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (21)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: -3, PSW: 0084 [--------X----N--])
+New Tick (22)
+Process [2 - prog-V1-E3] has requested to terminate
+New Tick (23)
+{0D 000 000} IRET 0 0 (PC: 0, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (24)
+{05 000 000} NOP 0 0 (PC: 1, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (25)
+{04 005 000} TRAP 5 0 (PC: 2, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (26)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: -3, PSW: 0084 [--------X----N--])
+New Tick (27)
+Process [3 - prog-V1-E3] has the processor assigned.    Processor general registers A: 5         B: 0
+New Tick (28)
+{0D 000 000} IRET 0 0 (PC: 2, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (29)
+{01 00A 80D} ADD 10 -13 (PC: 3, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (30)
+{08 00F 000} WRITE 15 0 (PC: 4, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (31)
+{04 003 000} TRAP 3 0 (PC: 5, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (32)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: -3, PSW: 0084 [--------X----N--])
+New Tick (33)
+Process [3 - prog-V1-E3] has requested to terminate
+New Tick (34)
+{0D 000 000} IRET 0 0 (PC: 3, Accumulator: -3, PSW: 0084 [--------X----N--])
+New Tick (35)
+{04 003 000} TRAP 3 0 (PC: 4, Accumulator: -3, PSW: 0084 [--------X----N--])
+New Tick (36)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: -3, PSW: 0084 [--------X----N--])
+New Tick (37)
+Process [0 - SystemIdleProcess] has requested to terminate
+The system will shut down now...
+New Tick (38)
+{0D 000 000} IRET 0 0 (PC: 241, Accumulator: -3, PSW: 0084 [--------X----N--])
+New Tick (39)
+{0B 000 000} HALT 0 0 (PC: 241, Accumulator: -3, PSW: 0085 [--------X----N-S])
+END of the simulation

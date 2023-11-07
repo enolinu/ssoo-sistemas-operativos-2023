@@ -1,0 +1,29 @@
+Simulator after V2-ex2
+Arguments: "prog-V1-E0"
+
+30 messages loaded from file messagesTCH.txt
+7 messages loaded from file messagesSTD.txt
+0 Asserts Loaded
+User program list:
+        Program [programVerySimple] with arrival time [0]
+Process [0] created from program [SystemIdleProcess]
+Process [1] created from program [programVerySimple]
+New Tick (1)
+{0D 000 000} IRET 0 0 (PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (2)
+{05 000 000} NOP 0 0 (PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (3)
+{04 005 000} TRAP 5 0 (PC: 2, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (4)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (5)
+Process [1 - programVerySimple] has the processor assigned.     Processor general registers A: 5         B: 0
+New Tick (6)
+{0D 000 000} IRET 0 0 (PC: 2, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (7)
+{01 00A 80D} ADD 10 -13 (PC: 3, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (8)
+{08 00F 000} WRITE 15 0 (PC: 4, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (9)
+{0B 000 000} HALT 0 0 (PC: 4, Accumulator: -3, PSW: 0005 [-------------N-S])
+END of the simulation

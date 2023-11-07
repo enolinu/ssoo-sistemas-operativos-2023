@@ -1,0 +1,177 @@
+Simulator after V1-ex13
+arguments: "prog-V1-E13_1","prog-V1-E13_2"
+
+30 messages loaded from file messagesTCH.txt
+13 messages loaded from file messagesSTD.txt
+0 Asserts Loaded
+User program list:
+        Program [prog-V1-E13_1] with arrival time [0]
+        Program [prog-V1-E13_2] with arrival time [0]
+New process [3 - SystemIdleProcess] moving to the [NEW] state
+Process [3] created from program [SystemIdleProcess]
+Process [3 - SystemIdleProcess] moving from the [NEW] state to the [READY] state
+Ready-to-run processes queue:
+        USER: -EMPTY-
+        DAEMONS:[3,100] 
+New process [0 - prog-V1-E13_1] moving to the [NEW] state
+Process [0] created from program [prog-V1-E13_1]
+Process [0 - prog-V1-E13_1] moving from the [NEW] state to the [READY] state
+Ready-to-run processes queue:
+        USER:[0,5] 
+        DAEMONS:[3,100] 
+New process [1 - prog-V1-E13_2] moving to the [NEW] state
+Process [1] created from program [prog-V1-E13_2]
+Process [1 - prog-V1-E13_2] moving from the [NEW] state to the [READY] state
+Ready-to-run processes queue:
+        USER:[0,5], [1,5] 
+        DAEMONS:[3,100] 
+Process [0 - prog-V1-E13_1] moving from the [READY] state to the [EXECUTING] state
+New Tick (1)
+{0D 000 000} IRET 0 0 (PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (2)
+{01 003 000} ADD 3 0 (PC: 1, Accumulator: 3, PSW: 0000 [----------------])
+New Tick (3)
+{0A 801 000} INC -1 0 (PC: 2, Accumulator: 2, PSW: 0000 [----------------])
+New Tick (4)
+{04 004 000} TRAP 4 0 (PC: 3, Accumulator: 2, PSW: 0000 [----------------])
+New Tick (5)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: 2, PSW: 0080 [--------X-------])
+New Tick (6)
+Process [0 - prog-V1-E13_1] will transfer the control of the processor to process [1 - prog-V1-E13_2]
+Process [0 - prog-V1-E13_1] moving from the [EXECUTING] state to the [READY] state
+Ready-to-run processes queue:
+        USER:[1,5], [0,5] 
+        DAEMONS:[3,100] 
+Process [1 - prog-V1-E13_2] moving from the [READY] state to the [EXECUTING] state
+New Tick (7)
+{0D 000 000} IRET 0 0 (PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (8)
+{01 803 000} ADD -3 0 (PC: 1, Accumulator: -3, PSW: 0004 [-------------N--])
+New Tick (9)
+{0A 001 000} INC 1 0 (PC: 2, Accumulator: -2, PSW: 0004 [-------------N--])
+New Tick (10)
+{04 004 000} TRAP 4 0 (PC: 3, Accumulator: -2, PSW: 0004 [-------------N--])
+New Tick (11)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: -2, PSW: 0084 [--------X----N--])
+New Tick (12)
+Process [1 - prog-V1-E13_2] will transfer the control of the processor to process [0 - prog-V1-E13_1]
+Process [1 - prog-V1-E13_2] moving from the [EXECUTING] state to the [READY] state
+Ready-to-run processes queue:
+        USER:[0,5], [1,5] 
+        DAEMONS:[3,100] 
+Process [0 - prog-V1-E13_1] moving from the [READY] state to the [EXECUTING] state
+New Tick (13)
+{0D 000 000} IRET 0 0 (PC: 3, Accumulator: 2, PSW: 0000 [----------------])
+New Tick (14)
+{07 002 000} ZJUMP 2 0 (PC: 4, Accumulator: 2, PSW: 0000 [----------------])
+New Tick (15)
+{06 803 000} JUMP -3 0 (PC: 1, Accumulator: 2, PSW: 0000 [----------------])
+New Tick (16)
+{0A 801 000} INC -1 0 (PC: 2, Accumulator: 1, PSW: 0000 [----------------])
+New Tick (17)
+{04 004 000} TRAP 4 0 (PC: 3, Accumulator: 1, PSW: 0000 [----------------])
+New Tick (18)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: 1, PSW: 0080 [--------X-------])
+New Tick (19)
+Process [0 - prog-V1-E13_1] will transfer the control of the processor to process [1 - prog-V1-E13_2]
+Process [0 - prog-V1-E13_1] moving from the [EXECUTING] state to the [READY] state
+Ready-to-run processes queue:
+        USER:[1,5], [0,5] 
+        DAEMONS:[3,100] 
+Process [1 - prog-V1-E13_2] moving from the [READY] state to the [EXECUTING] state
+New Tick (20)
+{0D 000 000} IRET 0 0 (PC: 3, Accumulator: -2, PSW: 0004 [-------------N--])
+New Tick (21)
+{07 002 000} ZJUMP 2 0 (PC: 4, Accumulator: -2, PSW: 0004 [-------------N--])
+New Tick (22)
+{06 803 000} JUMP -3 0 (PC: 1, Accumulator: -2, PSW: 0004 [-------------N--])
+New Tick (23)
+{0A 001 000} INC 1 0 (PC: 2, Accumulator: -1, PSW: 0004 [-------------N--])
+New Tick (24)
+{04 004 000} TRAP 4 0 (PC: 3, Accumulator: -1, PSW: 0004 [-------------N--])
+New Tick (25)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: -1, PSW: 0084 [--------X----N--])
+New Tick (26)
+Process [1 - prog-V1-E13_2] will transfer the control of the processor to process [0 - prog-V1-E13_1]
+Process [1 - prog-V1-E13_2] moving from the [EXECUTING] state to the [READY] state
+Ready-to-run processes queue:
+        USER:[0,5], [1,5] 
+        DAEMONS:[3,100] 
+Process [0 - prog-V1-E13_1] moving from the [READY] state to the [EXECUTING] state
+New Tick (27)
+{0D 000 000} IRET 0 0 (PC: 3, Accumulator: 1, PSW: 0000 [----------------])
+New Tick (28)
+{07 002 000} ZJUMP 2 0 (PC: 4, Accumulator: 1, PSW: 0000 [----------------])
+New Tick (29)
+{06 803 000} JUMP -3 0 (PC: 1, Accumulator: 1, PSW: 0000 [----------------])
+New Tick (30)
+{0A 801 000} INC -1 0 (PC: 2, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (31)
+{04 004 000} TRAP 4 0 (PC: 3, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (32)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (33)
+Process [0 - prog-V1-E13_1] will transfer the control of the processor to process [1 - prog-V1-E13_2]
+Process [0 - prog-V1-E13_1] moving from the [EXECUTING] state to the [READY] state
+Ready-to-run processes queue:
+        USER:[1,5], [0,5] 
+        DAEMONS:[3,100] 
+Process [1 - prog-V1-E13_2] moving from the [READY] state to the [EXECUTING] state
+New Tick (34)
+{0D 000 000} IRET 0 0 (PC: 3, Accumulator: -1, PSW: 0004 [-------------N--])
+New Tick (35)
+{07 002 000} ZJUMP 2 0 (PC: 4, Accumulator: -1, PSW: 0004 [-------------N--])
+New Tick (36)
+{06 803 000} JUMP -3 0 (PC: 1, Accumulator: -1, PSW: 0004 [-------------N--])
+New Tick (37)
+{0A 001 000} INC 1 0 (PC: 2, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (38)
+{04 004 000} TRAP 4 0 (PC: 3, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (39)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (40)
+Process [1 - prog-V1-E13_2] will transfer the control of the processor to process [0 - prog-V1-E13_1]
+Process [1 - prog-V1-E13_2] moving from the [EXECUTING] state to the [READY] state
+Ready-to-run processes queue:
+        USER:[0,5], [1,5] 
+        DAEMONS:[3,100] 
+Process [0 - prog-V1-E13_1] moving from the [READY] state to the [EXECUTING] state
+New Tick (41)
+{0D 000 000} IRET 0 0 (PC: 3, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (42)
+{07 002 000} ZJUMP 2 0 (PC: 5, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (43)
+{04 003 000} TRAP 3 0 (PC: 6, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (44)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (45)
+Process [0 - prog-V1-E13_1] has requested to terminate
+Process [0 - prog-V1-E13_1] moving from the [EXECUTING] state to the [EXIT] state
+Process [1 - prog-V1-E13_2] moving from the [READY] state to the [EXECUTING] state
+New Tick (46)
+{0D 000 000} IRET 0 0 (PC: 3, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (47)
+{07 002 000} ZJUMP 2 0 (PC: 5, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (48)
+{04 003 000} TRAP 3 0 (PC: 6, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (49)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (50)
+Process [1 - prog-V1-E13_2] has requested to terminate
+Process [1 - prog-V1-E13_2] moving from the [EXECUTING] state to the [EXIT] state
+Process [3 - SystemIdleProcess] moving from the [READY] state to the [EXECUTING] state
+New Tick (51)
+{0D 000 000} IRET 0 0 (PC: 183, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (52)
+{04 003 000} TRAP 3 0 (PC: 184, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (53)
+{0C 002 000} OS 2 0 (PC: 242, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (54)
+Process [3 - SystemIdleProcess] has requested to terminate
+Process [3 - SystemIdleProcess] moving from the [EXECUTING] state to the [EXIT] state
+The system will shut down now...
+New Tick (55)
+{0D 000 000} IRET 0 0 (PC: 241, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+New Tick (56)
+{0B 000 000} HALT 0 0 (PC: 241, Accumulator: 0, PSW: 0083 [--------X-----ZS])
+END of the simulation

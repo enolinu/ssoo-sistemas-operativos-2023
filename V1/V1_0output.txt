@@ -1,0 +1,19 @@
+Simulator after V2-ex0
+Arguments: "prog-V1-E0"
+
+30 messages loaded from file messagesTCH.txt
+7 messages loaded from file messagesSTD.txt
+0 Asserts Loaded
+Process [3] created from program [SystemIdleProcess]
+Process [0] created from program [prog-V1-E0]
+New Tick (1)
+{0D 000 000} IRET 0 0 (PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+New Tick (2)
+{01 00A 000} ADD 10 0 (PC: 1, Accumulator: 10, PSW: 0000 [----------------])
+New Tick (3)
+{08 00F 000} WRITE 15 0 (PC: 2, Accumulator: 10, PSW: 0000 [----------------])
+New Tick (4)
+{11 00A 00F} MEMADD 10 15 (PC: 3, Accumulator: 20, PSW: 0000 [----------------])
+New Tick (5)
+{0B 000 000} HALT 0 0 (PC: 3, Accumulator: 20, PSW: 0001 [---------------S])
+END of the simulation
